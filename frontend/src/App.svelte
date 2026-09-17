@@ -6,7 +6,7 @@
   let barEl
 
   onMount(async () => {
-    const res = await fetch('/data')
+    const res = await fetch('/api/data')
     const data = await res.json()
 
     echarts.init(pieEl).setOption({
